@@ -1,5 +1,3 @@
-#Victor-Foscarini
-
 n = input()
 x = [int(y) for y in input().split()]
 x.reverse()
