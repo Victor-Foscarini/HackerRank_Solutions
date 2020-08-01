@@ -27,7 +27,7 @@ class SinglyLinkedList:
 
         self.tail = node
         
-#iníco do código do usuário
+#iníco
 
 def printLinkedList(head):
     while head!=None:
