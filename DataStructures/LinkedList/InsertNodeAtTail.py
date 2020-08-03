@@ -27,6 +27,9 @@ def print_singly_linked_list(node, sep, fptr):
 #beggining
 
 def insertNodeAtTail(head, data):
+    
+    sys.setrecursionlimit(1000000) #necessary so that we don't reach infinite recursion
+
     if head == None:
         return SinglyLinkedListNode(data)
     else:
