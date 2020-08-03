@@ -24,7 +24,6 @@ def print_singly_linked_list(node, sep, fptr):
         if node:
             fptr.write(sep)
 
-
 #beggining
 
 def insertNodeAtTail(head, data):
@@ -35,13 +34,10 @@ def insertNodeAtTail(head, data):
             head.next = SinglyLinkedListNode(data)
         else:
             insertNodeAtTail(head.next,data)
-        return head
-    
-
-    head.next = SinglyLinkedListNode(data)
     return head
 
 #end
+
 
 
 if __name__ == '__main__':
