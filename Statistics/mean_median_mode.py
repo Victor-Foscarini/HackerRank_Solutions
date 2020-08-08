@@ -56,3 +56,14 @@ nums = list(map(int,input().split()))
 print(np.mean(nums))
 print(np.median(nums))
 print(int(stats.mode(nums)[0]))
+
+
+
+
+
+
+
+
+
+
+
