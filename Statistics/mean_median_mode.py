@@ -1,3 +1,5 @@
+#without libraries
+
 class stat():
     def __init__(self,list=[],n=None):
         self.list = list
@@ -41,3 +43,16 @@ stat = stat(list)
 print(stat.mean())
 print(stat.median())
 print(stat.mode())
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#with libraries
+
+import numpy as np
+from scipy import stats
+
+n = int(input())
+nums = list(map(int,input().split()))
+print(np.mean(nums))
+print(np.median(nums))
+print(int(stats.mode(nums)[0]))
