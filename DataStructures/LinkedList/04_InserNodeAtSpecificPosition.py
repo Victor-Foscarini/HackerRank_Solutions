@@ -39,7 +39,7 @@ def print_singly_linked_list(node, sep, fptr):
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 def insertNodeAtPosition(head, data, position):
-    if head == None:
+    if not head:
         return SinglyLinkedListNode(data)
     elif position != 1:
         insertNodeAtPosition(head.next,data,position-1)
