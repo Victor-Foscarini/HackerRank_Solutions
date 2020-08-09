@@ -31,7 +31,7 @@ def insertNodeAtHead(head, data):
  
     sys.setrecursionlimit(1000000) #necessary so that we don't reach infinite recursion
 
-    if head == None:
+    if not head:
         return SinglyLinkedListNode(data)
     else:
         new_head = SinglyLinkedListNode(data)
