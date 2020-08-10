@@ -37,9 +37,9 @@ def print_singly_linked_list(node, sep, fptr):
 
 def compare_lists(llist1, llist2):
     if llist1 == llist2 == None:
-        return True
+        return 1
     elif llist1==None or llist2 == None or llist1.data != llist2.data:
-        return False
+        return 0
     else:
         return compare_lists(llist1.next,llist2.next)
 
