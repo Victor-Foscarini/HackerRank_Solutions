@@ -39,7 +39,7 @@ def print_singly_linked_list(node, sep, fptr):
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #First Solution: using another list
-def has_cycle(head,visited = []):
+def has_cycle(head):
     result = None
     while 1:
         if not head:
@@ -53,7 +53,18 @@ def has_cycle(head,visited = []):
             head = head.next
     return result
     
-#Second Solution:
+#Second Solution: floyd's cycle-finding algorithm
+def has_cycle(head):
+    if not head:
+        return 0
+    slow = head
+    fast = head
+    while(slow and fast and fast.next):
+        slow = slow.next
+        fast = fast.next.next
+        if slow == fast:
+            return 1
+    return 0
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
