@@ -41,6 +41,7 @@ def print_singly_linked_list(node, sep, fptr):
 #First Solution: using another list
 def has_cycle(head):
     result = None
+    visited = set()
     while 1:
         if not head:
             result = False
@@ -49,9 +50,10 @@ def has_cycle(head):
             result = True
             break
         else:
-            visited.append(head)
+            visited.add(head)
             head = head.next
     return result
+
     
 #Second Solution: floyd's cycle-finding algorithm
 def has_cycle(head):
