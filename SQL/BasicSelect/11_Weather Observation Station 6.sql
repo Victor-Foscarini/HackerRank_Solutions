@@ -1,8 +1,8 @@
 option 1:
-select city from station where substr(city,1,1) in ('a','e','i','o','u');
+select city from station where city regexp '^[aeiou]' 
 
 option 2:
-select city from station where city regexp '^[aeiou]' 
+select city from station where substr(city,1,1) in ('a','e','i','o','u');
 
 option 3:
 select distinct city from station where 
