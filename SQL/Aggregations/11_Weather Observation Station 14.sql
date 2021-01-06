@@ -1,1 +1,1 @@
-https://github.com/Victor-Foscarini/HackerRank_Solutions/tree/master/SQL/Aggregations
+select round(max(LAT_N),4) from STATION where LAT_N<137.2345;
